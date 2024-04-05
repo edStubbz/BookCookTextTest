@@ -10,3 +10,4 @@ As the harness is created so that the library is imported in the same way that a
 The process for this testing was to ensure that the parameters, when adjusted operate as intended. Furthermore tests were done using erroneous values for textbox parameters to determine how the code would behave.
 
 ## Conclusion
+All functions as expected except for lack of functionality from both background colour and character spacing.
