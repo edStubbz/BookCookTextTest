@@ -1,0 +1,114 @@
+Text contract test.	Pass = P	Fail = F	Crash = C
+
+x coordinate:
+Positive int- P
+Negative int- P 
+String as input- F (error message in command window)
+Float input- F (error message in command window)
+Double input- F (error message in command window)
+
+Y coordinage 
+Positive int- P
+Negative int- P 
+String as input- F (error message in command window)
+Float input- F (error message in command window)
+Double input- F (error message in command window)
+
+
+Width
+Positive int- P
+Negative int- P (only text is visible)
+Zero value - P (only text is visible)
+String as input- F (error message in command window)
+Float input- P
+Double input- P
+
+Height
+Positive int- P
+Negative int- P (only text is visible)
+Zero value - P (only text is visible)
+String as input- F (error message in command window)
+Float input- P 
+Double input- P 
+
+Content
+All letter, number and character values appear to work as content.
+
+Font
+vaid font - P
+invalid font (string) - P (error message shown font reverted to default)
+invalid font (int) - P (error message shown font reverted to default)
+invalid font (float) - P (error message shown font reverted to default)
+invalid font (double) - P (error message shown font reverted to default)
+
+Font Colour (hex)
+Valid input - P
+Valid input (without hash) - P
+Invalid hex input (length) - F (error message in command window)
+Invalid hex input (negative) - F (error message in command window)
+string input - F (error message in command window)
+double input - F (error message in command window)
+
+Font Size 
+Valid input - P
+Large input - P (corrects to maximum possible size)
+negative input - P (corrects to size 12)
+double input - F (error message in command window)
+string input - F (error message in command window)
+Zero value - P (text doesnt appear)
+
+Line Spacing
+Valid input (double) - P
+Large input - C
+int input - P
+negative input - P (text overlaps)
+String input - F (error message in debug window)
+Zero value - P
+
+Character Spacing
+Valid input (Double)- ? (no visible change code runs as expected otherwise)
+Negative value - ? (no visible change code runs as expected otherwise)
+Zero value - ? (no visible change code runs as expected otherwise)
+String input - F (error message in debug window)
+
+Background Colour (hex)
+Valid input - F (no apparent effect)
+Valid input (without hash) - F (no apparent effect)
+Invalid hex input (length) - F (error message in command window)
+Invalid hex input (negative) - F (no apparent effect)
+string input - F (error message in command window)
+double input - F (error message in command window)
+
+Border Colour (hex)
+Valid input - P
+Valid input (without hash) - P
+Invalid hex input (length) - F (error message in command window)
+Invalid hex input (negative) - F (error message in command window)
+string input - F (error message in command window)
+double input - F (error message in command window)
+
+Border Width
+Positive int- P
+Negative int- P (border not visible)
+Zero value - P (only text is visible)
+Large value - P (whole canvas is border)
+String input- F (error message in command window)
+Double input- F (error message in command window)
+
+Margin
+Positive int - P
+Negative int - P (appears outside of textbox)
+Zero value - P
+String input- F (error message in command window)
+Double input- F (error message in command window)
+Large value - P (reverts to default)
+
+Corner radius
+Positive value - P
+Large value - P (reverts to default)
+Negative value - P (reverts to default)
+String input - F (error message in command window)
+Zero value - P
+
+Add Border
+Performs as expected.
